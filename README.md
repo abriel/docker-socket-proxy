@@ -44,7 +44,7 @@ easyrsa build-ca
 
 Issue a server certificate. "localhost" is used as example. Choose appropriate, the one to be used in requests.
 ```
-easyrsa build-server-full --no-pass localhost
+easyrsa --no-pass build-server-full localhost
 ```
 
 ### Username and Password for Authentication
