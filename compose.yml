@@ -1,6 +1,7 @@
 services:
   proxy:
     image: nginx:latest
+    pull_policy: always
     volumes:
       - /run/docker.sock:/run/docker.sock
       - ./server.conf:/etc/nginx/conf.d/server.conf
