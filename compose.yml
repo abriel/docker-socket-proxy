@@ -2,6 +2,7 @@ services:
   proxy:
     image: nginx:latest
     pull_policy: always
+    restart: unless-stopped
     volumes:
       - /run/docker.sock:/run/docker.sock
       - ./server.conf:/etc/nginx/conf.d/server.conf
